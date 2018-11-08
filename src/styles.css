@@ -3,7 +3,63 @@
   text-align: center;
 }
 
-#mapid {
-  height: 400px;
-  width: 800px;
+#page-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 70px 800px;
+  grid-template-areas:
+      "nav nav"
+      "game-area guess-area"
 }
+#nav {
+  grid-area: nav;
+  background-color: hotpink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#info {
+  width: auto;
+  padding: 15px;
+  margin: 10px;
+}
+
+#game-area {
+  grid-area: game-area;
+  background-color: #b666d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+#guess-area {
+  grid-area: guess-area;
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.map {
+  padding: 0px;
+  margin: 0px;
+  border: black 8px solid;
+  justify-self: center;
+  align-self: center;
+}
+
+#game-map {
+  height: 100%;
+  width: 100%;
+}
+
+#guess-map {
+  height: 100%;
+  width: 100%;
+}
+
+
