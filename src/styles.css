@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-#page-container {
+#grid {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 70px 800px;
@@ -33,6 +33,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px;
+  height: 500px;
 }
 
 #guess-area {
@@ -42,6 +43,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px;
+  height: 500px;
 }
 
 .map {
